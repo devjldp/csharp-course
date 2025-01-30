@@ -180,7 +180,7 @@ short z = (short)x; // Explicit conversion to 16-bit integral type
 ```
 
 ### Interacting with the Console
-Using the Console.ReadLine command, we can interact with the console and input data, which is then stored in a variable. The entered data is automatically converted to a string type.
+Using the `Console.ReadLine()` command, we can interact with the console and input data, which is then stored in a variable. The entered data is automatically converted to a string type.
 
 Example:
 ```csharp
@@ -188,7 +188,7 @@ fullName = Console.ReadLine();
 ```
 
 Note:
-* If you need to work with the input as another type (e.g., int or double), you can use methods like int.Parse() or double.Parse() to convert the input string.
+* If you need to work with the input as another type (e.g., int or double), you can use method `.Parse()` for example `like int.Parse()` or `double.Parse()` to convert the input string.
 Example:
 ```csharp
 int age = int.Parse(Console.Readline()) // Converto from string to int
@@ -196,8 +196,8 @@ int age = int.Parse(Console.Readline()) // Converto from string to int
 
 ### String interpolation
 
-We can display a string and variables together on the screen using the $ symbol. This allows for cleaner and more readable code when combining variables within strings.
-By placing variables inside curly braces {} within the string, variables are automatically replaced with their values."
+We can display a string and variables together on the screen using the `$` symbol. This allows for cleaner and more readable code when combining variables within strings.
+By placing variables inside curly braces `{}` within the string, variables are automatically replaced with their values.
 
 Example
 ```csharp
