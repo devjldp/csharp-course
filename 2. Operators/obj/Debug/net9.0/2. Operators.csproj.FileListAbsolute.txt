@@ -1,0 +1,15 @@
+C:\Users\JoseIungo\Desktop\Github\csharp-course\2. Operators\bin\Debug\net9.0\2. Operators.exe
+C:\Users\JoseIungo\Desktop\Github\csharp-course\2. Operators\bin\Debug\net9.0\2. Operators.deps.json
+C:\Users\JoseIungo\Desktop\Github\csharp-course\2. Operators\bin\Debug\net9.0\2. Operators.runtimeconfig.json
+C:\Users\JoseIungo\Desktop\Github\csharp-course\2. Operators\bin\Debug\net9.0\2. Operators.dll
+C:\Users\JoseIungo\Desktop\Github\csharp-course\2. Operators\bin\Debug\net9.0\2. Operators.pdb
+C:\Users\JoseIungo\Desktop\Github\csharp-course\2. Operators\obj\Debug\net9.0\2. Operators.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JoseIungo\Desktop\Github\csharp-course\2. Operators\obj\Debug\net9.0\2. Operators.AssemblyInfoInputs.cache
+C:\Users\JoseIungo\Desktop\Github\csharp-course\2. Operators\obj\Debug\net9.0\2. Operators.AssemblyInfo.cs
+C:\Users\JoseIungo\Desktop\Github\csharp-course\2. Operators\obj\Debug\net9.0\2. Operators.csproj.CoreCompileInputs.cache
+C:\Users\JoseIungo\Desktop\Github\csharp-course\2. Operators\obj\Debug\net9.0\2. Operators.sourcelink.json
+C:\Users\JoseIungo\Desktop\Github\csharp-course\2. Operators\obj\Debug\net9.0\2. Operators.dll
+C:\Users\JoseIungo\Desktop\Github\csharp-course\2. Operators\obj\Debug\net9.0\refint\2. Operators.dll
+C:\Users\JoseIungo\Desktop\Github\csharp-course\2. Operators\obj\Debug\net9.0\2. Operators.pdb
+C:\Users\JoseIungo\Desktop\Github\csharp-course\2. Operators\obj\Debug\net9.0\2. Operators.genruntimeconfig.cache
+C:\Users\JoseIungo\Desktop\Github\csharp-course\2. Operators\obj\Debug\net9.0\ref\2. Operators.dll
