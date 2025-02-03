@@ -34,6 +34,13 @@ The **remainder** of a division is the amount left over after dividing one numbe
 
 ### Comparison Operators
 
+We are going to use comparison operators to compare their operands. They return `true` or `false`.
+The comparison operators are:
+* `==` *equal to*. Compare if two operands are equal or not.
+* `<` *less than*. Compare if the first operand is less than the second operand
+* `>` *greater than*. Compare if the first operand is greater than the second operand
+* `<=` *less or equal than*. Compare if the first operand is less or equal than the second operand
+* `>=` *greater or equal than*. Compare if the first operand is greater or equal than the second operand
 
 ### Logical Operators
 
