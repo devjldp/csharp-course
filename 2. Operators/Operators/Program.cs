@@ -27,3 +27,15 @@ Console.WriteLine(5 > 3 || 4 > 4); // true (The secon operand is not checked) is
 Console.WriteLine(5 == 6 | 5 > 3);  // false or true is true
 Console.WriteLine(!(5 > 3));; // Not true is false
 Console.WriteLine(!( 3 > 5)); // Not flase is true
+
+// ====== Assignment operators =====
+int a = 10;
+int b = 5;
+
+a = b;
+Console.WriteLine(a); // a is 5
+Console.WriteLine(a += 3); // a is 8
+Console.WriteLine(a -= 2); // a is 6
+Console.WriteLine(a *= 4); // a is 24
+Console.WriteLine(a /= 6); // a is 4
+Console.WriteLine(a %= 3); // a is 1

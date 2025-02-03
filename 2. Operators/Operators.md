@@ -59,3 +59,12 @@ What is the difference between `&` / `|` and `&&` / `||`?
 
 
 ### Assignment Operators
+
+We use them to assign values to variables.
+
+* `=` assigns a value to a variable.
+* `+=` adds and assigns the value.
+* `-=` substracts and assigns the value.
+* `*=` multiplies and assigns a value.
+* `/=` divides and assign a value.
+* `%=` calculates the reminder and assigns the value.
