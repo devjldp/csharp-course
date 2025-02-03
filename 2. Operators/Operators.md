@@ -44,5 +44,18 @@ The comparison operators are:
 
 ### Logical Operators
 
+The logical operators perform logical operations with bool operands:
+
+* `!` *negation operator*
+* `&` *Logical **and** operator*. The result is true if both operands are true, otherwise it will be false.
+* `|` *Logical **or** operator*. The result is true if one of the operands is true. If botah are false, the result will be false.
+* `^` *Logical exclusive **or** operator*. The result is true if one of the operands is true and the another one is false. Otherwise is false.
+* `&&` *Conditional logical **and** operator*. The result is true if both operands are true, otherwise it will be false.
+* `||` *Conditional logical **or** operator*. The result is true if one of the operands is true. If botah are false, the result will be false.
+
+What is the difference between `&` / `|` and `&&` / `||`? 
+* `&` and `|` evaluate both operands, doesn't matter if the first operand is true.
+* `&&` and `||` are *short-circuiting*. If the first operand is ture, the second operand is not evaluated.
+
 
 ### Assignment Operators

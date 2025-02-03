@@ -18,3 +18,12 @@ Console.WriteLine(5 < 3); //false
 Console.WriteLine(4 >= 4); // true
 Console.WriteLine(5 >= 9); // false
 Console.WriteLine(3 <= 6); //true
+
+
+// ===== Logical Operators =====
+Console.WriteLine(5 > 6 && 4 >= 4); // false (The second operand is not checked) is false
+Console.WriteLine(5 == 5 & 5 > 3); // true and true is true
+Console.WriteLine(5 > 3 || 4 > 4); // true (The secon operand is not checked) is true
+Console.WriteLine(5 == 6 | 5 > 3);  // false or true is true
+Console.WriteLine(!(5 > 3));; // Not true is false
+Console.WriteLine(!( 3 > 5)); // Not flase is true
