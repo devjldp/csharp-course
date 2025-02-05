@@ -9,6 +9,8 @@
     * 2.  [switch statment](#switch-statements)
 2. [Loops](#loops)
     * 2.1 [while loop](#while-loop)
+    * 2.2 [do-while loop](#do-while-loop)
+    * 2.3 [for loop](#for-loop)
 
 ## Conditional Statments:
 
@@ -156,8 +158,31 @@ We need to modify the value stored in the variable.
 int number = 10;
 while(number > 0)
 {
-    // infinite loop
     Console.WriteLine(number)
     numer--;
 }
 ```
+
+
+### do-while loop
+
+This loop is similar, with the singularity that the block of code will execute at least once, regardless of whether the condition is false or not.  
+**Note:** In a `while` loop, it only executes if the condition is `true`.
+
+```csharp
+int number = 0 
+
+// do-while loop
+do
+{
+    Console.WriteLine(number) // Execute this code once => display 0
+} while(number > 0)
+
+// while loop
+while(number > 0) // Since the condition is false the code inside the while loop will not be executed.
+{
+    Console.WriteLine(number)
+    numer--;
+}
+```
+### for loop
