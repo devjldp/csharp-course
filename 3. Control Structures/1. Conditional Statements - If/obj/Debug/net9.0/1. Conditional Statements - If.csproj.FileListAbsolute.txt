@@ -1,0 +1,15 @@
+C:\Users\JoseIungo\Desktop\Github\csharp-course\3. Control Structures\1. Conditional Statements - If\obj\Debug\net9.0\1. Conditional Statements - If.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JoseIungo\Desktop\Github\csharp-course\3. Control Structures\1. Conditional Statements - If\obj\Debug\net9.0\1. Conditional Statements - If.AssemblyInfoInputs.cache
+C:\Users\JoseIungo\Desktop\Github\csharp-course\3. Control Structures\1. Conditional Statements - If\obj\Debug\net9.0\1. Conditional Statements - If.AssemblyInfo.cs
+C:\Users\JoseIungo\Desktop\Github\csharp-course\3. Control Structures\1. Conditional Statements - If\obj\Debug\net9.0\1. Conditional Statements - If.csproj.CoreCompileInputs.cache
+C:\Users\JoseIungo\Desktop\Github\csharp-course\3. Control Structures\1. Conditional Statements - If\obj\Debug\net9.0\1. Conditional Statements - If.sourcelink.json
+C:\Users\JoseIungo\Desktop\Github\csharp-course\3. Control Structures\1. Conditional Statements - If\bin\Debug\net9.0\1. Conditional Statements - If.exe
+C:\Users\JoseIungo\Desktop\Github\csharp-course\3. Control Structures\1. Conditional Statements - If\bin\Debug\net9.0\1. Conditional Statements - If.deps.json
+C:\Users\JoseIungo\Desktop\Github\csharp-course\3. Control Structures\1. Conditional Statements - If\bin\Debug\net9.0\1. Conditional Statements - If.runtimeconfig.json
+C:\Users\JoseIungo\Desktop\Github\csharp-course\3. Control Structures\1. Conditional Statements - If\bin\Debug\net9.0\1. Conditional Statements - If.dll
+C:\Users\JoseIungo\Desktop\Github\csharp-course\3. Control Structures\1. Conditional Statements - If\bin\Debug\net9.0\1. Conditional Statements - If.pdb
+C:\Users\JoseIungo\Desktop\Github\csharp-course\3. Control Structures\1. Conditional Statements - If\obj\Debug\net9.0\1. Conditional Statements - If.dll
+C:\Users\JoseIungo\Desktop\Github\csharp-course\3. Control Structures\1. Conditional Statements - If\obj\Debug\net9.0\refint\1. Conditional Statements - If.dll
+C:\Users\JoseIungo\Desktop\Github\csharp-course\3. Control Structures\1. Conditional Statements - If\obj\Debug\net9.0\1. Conditional Statements - If.pdb
+C:\Users\JoseIungo\Desktop\Github\csharp-course\3. Control Structures\1. Conditional Statements - If\obj\Debug\net9.0\1. Conditional Statements - If.genruntimeconfig.cache
+C:\Users\JoseIungo\Desktop\Github\csharp-course\3. Control Structures\1. Conditional Statements - If\obj\Debug\net9.0\ref\1. Conditional Statements - If.dll

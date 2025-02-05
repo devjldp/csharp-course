@@ -5,11 +5,11 @@
 1. [Conditional Statements](#conditional-statments)
     * 1.1 [If statements](#if-statments)
     * 1.2 [else statement](#else-statement)
-    * 1.3 [else if sattement](#else-if-statement)
+    * 1.3 [else if sattement](#else-if-statements)
+    * 2.  [switch statment](#switch-statements)
 
 
-
-## Conditional Statments
+## Conditional Statments:
 
 We are going to use conditional statements to make decision in Code.
 
@@ -32,7 +32,7 @@ The block inside of the if statement will be executed only if the condition is t
 What happen if the condition is `false`? We use `else` clause.  
 **Note:** Inside parenthesis we can use all operators. `Arithmetic operators`, `comparison operators`, `logical operators`, `assignment operators`.
 
-## else statement
+### else statement
 
 The `else` block will be executed only if the `if` condition is false.
 
@@ -49,7 +49,7 @@ else // Since the condition is false, this block of code will be executed.
 }
 
 ```
-## else-if statement
+### else-if statements
 
 The `else if` statement is used to specify a new condition if the initial condition is false.
 
@@ -73,3 +73,57 @@ else
 ```
 
 **Note:** You can use more than one `else if` statement
+
+
+### switch statements
+
+The `switch` statement is used to evaluate an expression and execute different blocks of code based on its value.
+
+* Evaluate the expression once.
+* Compare the result against different cases.
+* Execute the code corresponding to the first matching case.
+* Optional: Write a default case if there are no matches.
+
+```csharp
+int age = 16;
+
+switch (age > 18) // 16 > 18 = false.
+{
+    case true:
+        Console.WriteLine("You have access");
+        break;
+    case false:
+        Console.WriteLine("You don't have access");
+        break;
+}   
+
+```
+**Note:** After each case, we add the keyword break; because we don't want to continue the execution to the next case if the case matches the condition.
+
+*If we add a default option:*
+
+```csharp
+Console.WriteLine("Enter a day of the week");
+string day = Console.ReadLine();
+switch(day.ToLower())
+{
+    case "monday":
+        Console.WriteLine("Work from office");
+        break;
+    case "tuesday":
+        Console.WriteLine("Work from home");
+        break;
+    case "wednesday":
+        Console.WriteLine("Work from home");
+        break;
+    case "thursday":
+        Console.WriteLine("Work from office");
+        break;
+    case "friday":
+        Console.WriteLine("Work from site");
+        break;
+    default: // If the user enters saturday or sunday the default option will be executed.
+        Console.WriteLine("Day off!");
+        break;
+}
+```
