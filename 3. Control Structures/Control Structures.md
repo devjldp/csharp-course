@@ -7,7 +7,8 @@
     * 1.2 [else statement](#else-statement)
     * 1.3 [else if sattement](#else-if-statements)
     * 2.  [switch statment](#switch-statements)
-
+2. [Loops](#loops)
+    * 2.1 [while loop](#while-loop)
 
 ## Conditional Statments:
 
@@ -125,5 +126,38 @@ switch(day.ToLower())
     default: // If the user enters saturday or sunday the default option will be executed.
         Console.WriteLine("Day off!");
         break;
+}
+```
+
+---
+
+## Loops
+
+We use a loop to execute the same code until a condition is reached.
+
+### while loop
+
+We use a `while` loop to execute a code until the condition given is true. With a `while` loop first the condition is evaluated.
+
+```csharp
+int number = 10;
+while(number > 0)
+{
+    // infinite loop
+    Console.WriteLine(number)
+}
+```
+In the code above we are going to display the value of the number variable until its value is greater than 0.  
+But we have a problem: *The value of number is always 10.*  Then we will have an infinite loop.
+
+We need to modify the value stored in the variable.
+
+```csharp
+int number = 10;
+while(number > 0)
+{
+    // infinite loop
+    Console.WriteLine(number)
+    numer--;
 }
 ```
