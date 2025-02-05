@@ -19,3 +19,5 @@ No prior programming experience is required. We’ll start from the basics, step
 The course is divided into several sections form basic topics to advanced topics:
 
 [Variables and DataTypes](1.%20Variables/Variables.md)
+[Operators](2.%20Operators/Operators.md)
+[Control structures](3.%20Control%20Structures/Control%20Structures.md)
