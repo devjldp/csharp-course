@@ -220,3 +220,17 @@ Fith iteration: index = 8 ; 8 <= 10 (true); 8+2 = 10
 Sixth iteration: index = 10; 10 <= 10 (true); 10 + 2 = 12
 Seventh iteration: index = 12; 12 <= 10 (false) => The condition is false, for loop is finished.
 ```
+
+**Note 1:** When the topic of data structures, specifically arrays, is covered, the `foreach` loop will be explained.  
+**Note 2:** The starting point does not need to be 0.  
+**Note 3:** We can nest several loops.  
+```csharp
+for(int index1 = 0; index1 <= 5; index1++) // index += 2 => index = index + 2
+{
+    Console.WriteLine($"Iteration: {index1}");
+    for(int index2 = 6; index2 < 10; index2++)
+    {
+        Console.WriteLine(index2)
+    }
+}
+```
