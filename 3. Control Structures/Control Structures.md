@@ -6,7 +6,7 @@
     * 1.1 [If statements](#if-statments)
     * 1.2 [else statement](#else-statement)
     * 1.3 [else if sattement](#else-if-statements)
-    * 2.  [switch statment](#switch-statements)
+    * 1.4  [switch statment](#switch-statements)
 2. [Loops](#loops)
     * 2.1 [while loop](#while-loop)
     * 2.2 [do-while loop](#do-while-loop)
