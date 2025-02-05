@@ -159,7 +159,7 @@ int number = 10;
 while(number > 0)
 {
     Console.WriteLine(number)
-    numer--;
+    number--;
 }
 ```
 
@@ -176,7 +176,8 @@ int number = 0
 do
 {
     Console.WriteLine(number) // Execute this code once => display 0
-} while(number > 0)
+    number--;
+} while(number > 0);
 
 // while loop
 while(number > 0) // Since the condition is false the code inside the while loop will not be executed.
@@ -230,7 +231,7 @@ for(int index1 = 0; index1 <= 5; index1++) // index += 2 => index = index + 2
     Console.WriteLine($"Iteration: {index1}");
     for(int index2 = 6; index2 < 10; index2++)
     {
-        Console.WriteLine(index2)
+        Console.WriteLine(index2);
     }
 }
 ```
