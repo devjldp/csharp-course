@@ -186,3 +186,37 @@ while(number > 0) // Since the condition is false the code inside the while loop
 }
 ```
 ### for loop
+
+```
+Syntax:
+
+for( statement 1; statement 2; statemnet 3)
+{
+    block of code
+}
+```
+* statement 1: The starting point of your loop. The first point of your iteration.
+* statement 2: The final point of your loop. Where the iteration ends.
+* statement 3: The step. The amount by which the loop counter is incremented or decremented in each iteration.
+
+```csharp
+for(int index = 0; index <= 10; index += 2) // index += 2 => index = index + 2
+{
+    Console.WriteLine(index);
+}
+```
+
+Step by step
+```
+Starting point => index = 0
+Final point => index = 10
+step(increment) => 2
+
+First iteration: index = 0 ; 0 <= 10 (true); 0+2 = 2
+Second iteration: index = 2 ; 2 <= 10 (true); 2+2 = 4
+Third iteration: index = 4 ; 4 <= 10 (true); 4+2 = 6
+Fourth iteration: index = 6 ; 6 <= 10 (true); 6+2 = 8
+Fith iteration: index = 8 ; 8 <= 10 (true); 8+2 = 10
+Sixth iteration: index = 10; 10 <= 10 (true); 10 + 2 = 12
+Seventh iteration: index = 12; 12 <= 10 (false) => The condition is false, for loop is finished.
+```
