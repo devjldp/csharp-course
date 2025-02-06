@@ -19,7 +19,8 @@ Data structures are a way of organizing and storing data.
 
 ### Lists
 
-A list in C# is an **ordered collection** of objects. It is a predefined class in the .NET framework, and objects in the list must be of a specified type, such as string, int, etc.  
+A `list` in C# is an **ordered collection** of objects. It is a predefined class in the .NET framework, and objects in the list must be of a specified type, such as string, int, etc.  
+
 One of the key features of a list is that it is a `dynamic` data structure, meaning its size can grow or shrink as elements are added or removed.  
 This flexibility makes it a powerful tool for handling data collections. Additionally, lists provide various methods to manipulate data, such as adding, removing, and searching for elements, making them ideal for use in many programming scenarios.
 
@@ -112,6 +113,53 @@ fruits.Clear();
 ```
 
 ### Arrays
+
+An `array` in C# is an ordered collection of objects. The key difference compared to a list is that an array is a fixed-size data structure, meaning its size **cannot** grow or shrink as elements are **not** added or removed.
+
+
+Since an `array` is a `class` (you can read the official documentation [here](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-9.0)), we need to create an `instance` of the class to use it. In addition, we need to specify the size of the array in its declaration.
+
+There are several ways to create an `array`:
+* Create an empty array with fixed size.
+
+```csharp
+// Creating an array of 4 strings.
+string[] fruits = new string[4];
+```
+* Array with initial values: The size of the array is based on the number of the elements in the initializer.
+```csharp
+string[] fruits = new string[]{"Apple", "Banana", "Orange", "Mango"};
+```
+* Array with type inference: C# automatically determine the type of the elements and size of the array.
+```csharp
+string[] fruits = {"Apple", "Banana", "Orange", "Mango"};
+```
+
+We can **access** an element using its index. Remember, the index starts at 0.
+```csharp
+Console.WriteLine(fruits[1]); // Display fruit in the position index = 1
+```
+
+We can **modify** an element using its index.
+```csharp
+fruits[1]= "Strawberry"; // Change the value in the position index = 1
+Console.WriteLine(fruits[1]); // Display fruit in the position index = 1
+```
+
+#### Multidimensional arrays
+
+A **`multidimensional array`** is an array with two or more dimensions.
+
+We can create an array with more dimensions. For example a matrix is an array of two dimensions
+
+```csharp
+int[,] matrix = new int[2,3] // A 2x3 matrix (2 rows, 3 columns)
+```
+
+
+
+
+
 ### Linked List
 ### Dictionaries
 ### Stacks
