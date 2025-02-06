@@ -2,7 +2,7 @@
 
 Data structures are a way of organizing and storing data.
 
-![imag](images/dataStructures.jpeg)
+![imag](../images/dataStructures.jpeg)
 
 
 ## Content

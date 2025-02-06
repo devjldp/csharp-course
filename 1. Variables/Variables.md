@@ -43,7 +43,7 @@ using System;
 
 I like to imagine a variable like a box. We are going to hold data in that boxes.
 
-![variable](images/variableBox.png)
+![variable](../images/variableBox.png)
 
 however to define a variable, we need to specify its data type.
 
