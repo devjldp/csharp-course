@@ -20,4 +20,5 @@ The course is divided into several sections form basic topics to advanced topics
 
 1. [Variables and DataTypes](1.%20Variables/Variables.md)  
 2. [Operators](2.%20Operators/Operators.md)  
-3. [Control structures](3.%20Control%20Structures/Control%20Structures.md)  
+3. [Control structures](3.%20Control%20Structures/Control%20Structures.md)
+4. [Data Structures](4.%20Data%20Structures/Data%20Structures.md)  
