@@ -52,7 +52,7 @@ for(int index = 0; index < numbers.Count; index++)
     Console.WriteLine(numbers[index]); // Display all elements in the list
 }
 ```
-**Note:** Count gets the number of elements in the list.
+**Note:** `Count` gets the number of elements in the list.
 
 There is a different syntax to iterate over a list. Using the [`foreach`](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/iteration-statements#the-foreach-statement) loop.
 `foreach` execute a statement or block of statements *for each element* in the list.
@@ -111,6 +111,7 @@ fruits.Reverse();
 ```csharp
 fruits.Clear();
 ```
+--- 
 
 ### Arrays
 
@@ -153,17 +154,91 @@ A **`multidimensional array`** is an array with two or more dimensions.
 We can create an array with more dimensions. For example a matrix is an array of two dimensions
 
 ```csharp
-int[,] matrix = new int[2,3] // A 2x3 matrix (2 rows, 3 columns)
+int[,] matrix = new int[2,3]; // A 2x3 matrix (2 rows, 3 columns)
+```
+To get the total number of elements in all the dimension of the Array, we can use the property `Length`
+
+```csharp
+int[,] matrix = new int[4,3]{{2,3,5}, {4,5,6}, {7,8,9}, {1,3,5}};
+Console.WriteLine(matrix.Length); // 12 elements
 ```
 
+To get the dimension of the array, we can use the property `Rank`
+```csharp
+Console.WriteLine(matrix.Rank); // 2
+```
 
+#### Array Methods
+As an array has a fiex size, we don't have an `Add` method
 
+In this case  we have the method fill.
+**fill(arrayName, value)**: Assigns the given value to the elements of the array. Static method
+```csharp
+int[] myArray = new int[25];
+myArray.Fill(6); // Fills an array of 25 elements with value 6
+```
 
+We can apply this method to fill a specific range of an array with a given value.
+```
+Array.Fill(array, value, startIndex, count);
+```
+
+```csharp
+Array.Fill(myArray,3,5,9);
+/*
+myArray: The array you want to modify.
+3: The value that will fill the array within the specified range.
+5: The index at which to start filling the array.
+9: The number of elements to fill with the value 3.
+*/
+
+foreach (int number in myArray)
+{
+    Console.Write($"{number} "); // 6 6 6 6 6 3 3 3 3 3 3 3 3 3 6 6 6 6 6 6 6 6 6 6 6
+}
+```
+**Note:** Because the array was filled with 6, the rest of the numbers doesn't change. If we apply this method with an empty array, the value of the rest of elements is 0.
+
+**Empty():** Returns an empty array. It is an static method.
+
+**GetLength(integer):** Return the number of elements in the specified dimension of the Array.
+
+```csharp
+// A matrix two dimensional array.
+matrix.GetLength(0); // Returns the number of rows.
+matrix.GetLength(1); // Return the number of columns.
+```
+**Clear(arrayName):** Clears the content of an array, all elements will be 0. It is a static method.
+
+**Note:** More methods can be found in the [official documentation](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-9.0#methods)
+
+---
 
 ### Linked List
+
+---
+
 ### Dictionaries
+
+---
+
 ### Stacks
+
+---
+
 ### Queues
+
+---
+
 ### Hash Tables
+
+---
+
 ### Trees
+
+---
+
 ### Graphs
+
+---
+
