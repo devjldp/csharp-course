@@ -1,0 +1,15 @@
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\3. Linked List\obj\Debug\net9.0\3. Linked List.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\3. Linked List\obj\Debug\net9.0\3. Linked List.AssemblyInfoInputs.cache
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\3. Linked List\obj\Debug\net9.0\3. Linked List.AssemblyInfo.cs
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\3. Linked List\obj\Debug\net9.0\3. Linked List.csproj.CoreCompileInputs.cache
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\3. Linked List\obj\Debug\net9.0\3. Linked List.sourcelink.json
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\3. Linked List\bin\Debug\net9.0\3. Linked List.exe
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\3. Linked List\bin\Debug\net9.0\3. Linked List.deps.json
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\3. Linked List\bin\Debug\net9.0\3. Linked List.runtimeconfig.json
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\3. Linked List\bin\Debug\net9.0\3. Linked List.dll
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\3. Linked List\bin\Debug\net9.0\3. Linked List.pdb
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\3. Linked List\obj\Debug\net9.0\3. Linked List.dll
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\3. Linked List\obj\Debug\net9.0\refint\3. Linked List.dll
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\3. Linked List\obj\Debug\net9.0\3. Linked List.pdb
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\3. Linked List\obj\Debug\net9.0\3. Linked List.genruntimeconfig.cache
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\3. Linked List\obj\Debug\net9.0\ref\3. Linked List.dll

@@ -215,8 +215,96 @@ matrix.GetLength(1); // Return the number of columns.
 ---
 
 ### Linked List
+A `linked list` is a data structure that organizes elements in a linear sequence. It stores elements in non-contigous memory locations.  
+A linked list can not be indexed directly, it means that its elements cannot be accessed using a fixed numeric index.
+
+In a `linked list`:
+* Each element is called a node.
+* The first pointer is the head, which defines the first node in the list. It doesn't have any value.
+* Each node consists of two parts:
+    * A `key` (or value), which holds the data of the node.
+    * A `next` *pointer*, which points to the next node in the list.
+* The last node in the list has its next pointer set to *null*, indicating the end of the list.
+
+This structure allows for dynamic memory allocation, where nodes can be added or removed without needing to reorganize the entire structure, making linked lists efficient for certain operations.  
+
+If we want to access to the element with key = 5 => `head.next.next.next`  
+![Linked List image](../images/linkedList.png)
+
+But this is not efficient, so we are going to use a loop to traverse the list by following each node's next pointer.  
+
+So far, we have seen what is called a ` single linked list`, where each node contains a pointer to the next node. However there is no reference to the previous node.  
+
+If we want a reference to the previous node we are going to use a `doubly linked list`, where each node has two pointers:
+* One to the next node.
+* One to the previous node.
+
+![Doubly linked List](../images/doublyLinkedList.png)
+
+
+How to add a new node?
+
+![Add node process](../images/addNode1.png)  
+![Add node Flowchart](../images/addNode.png)
+
+The previous images show the process of adding a new node to the linked list.  
+
+When you add a new node to the linked list, the program first creates the node with the given value. 
+* If the list is empty, this new node becomes the first node. 
+* If the list already has nodes, the program moves through the list until it reaches the last node. Then, it connects the new node to the end of the list, updating the links so that the previous last node points to the new one, and the new one points back to it.  
+[Here you can check how to implement](/4.%20Data%20Structures/3.%20Linked%20List/LinkedList%20Implementation/myLinkedList.cs)
+
+In C# we have the `class LinkedList` to implement it.  
+**Note:** Linked List [documentation](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.linkedlist-1?view=net-9.0). The type of a node is [`LinkedListNode`](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.linkedlistnode-1?view=net-9.0)
+
+```csharp
+// Create a empty linedList
+LinkedList<string> pets =  new LinkedList<string>();
+```
+
+
+#### Main methods
+**AddFirst(newNode):** Inserts newNode at the beginning of the list.
+```csharp
+pets.AddFirst("Dog"); // The head will be Dog.
+```
+**AddLast(newNode):** Inserts newNode at the end of the list.  
+```csharp
+pets.AddLast("Cat"); // Cat will se the last node.
+```
+**AddAfter(node, newNode):** Inserts newNode after the given node.  
+```csharp
+LinkedListNode<string> dog = pets.Find("Dog");
+pets.AddAfter(dog, "Hamster"); // Hamster added after Dog
+```
+**Contains(value):** Checks if the list contains a node with the specified value. Returns true or false.  
+```csharp
+pets.Contains("Hamster"); // returns true
+```
+**Find(value):** Searches for the first node with the given value and returns it (or null if not found).  
+```csharp
+LinkedListNode<string> hamsterNode = pets.Find("Hamster");
+```
+**Remove(value):** Removes the first node with the given value from the list.  
+```csharp
+pets.Remove("Hamster");
+```
+**RemoveFirst():** Removes the first node of the list.  
+```csharp
+pets.RemoveFirst();
+```
+**RemoveLast():** Removes the last node of the list.  
+```csharp
+pets.RemoveLast();
+```
+**Clear():** Removes all nodes from the list.  
+```csharp
+pets.Clear();
+```
 
 ---
+
+
 
 ### Dictionaries
 
