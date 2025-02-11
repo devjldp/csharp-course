@@ -304,12 +304,95 @@ pets.Clear();
 
 ---
 
-
-
 ### Dictionaries
 
----
+A [`dictionary`](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2?view=net-9.0) is a data structure that stores `key-value` pairs. This data structure is dynamic, meaning the size of the dictionary can grow or shrink as needs.
 
+**Notes:** 
+* The key in a dictionary must be unique.
+* The data is not stored in an order.
+* To access values, we use keys.
+* We must specify the data type for both keys and values.
+
+Create a dictionary
+``` 
+Syntax:
+
+Dictionary<dataType key, dataType value> nameOfDictionary = new Dictionary<dataType key, dataType value>()
+```
+
+*Creating a new dictionary and initialize it with values*
+
+```csharp
+Dictionary<string, int> ages = new Dictionary<string, int>(){ // If we remove () it works.
+    {"Tom", 34},
+    {"Bob", 56},
+    {"Charlie", 34},
+    {"Sarah", 29}
+};
+```
+
+If we want to retrieve both keys and values, we can use a foreach loop. To do this, we need to use the type [`KeyValuePair<Tkey, TValue>`](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.keyvaluepair-2?view=net-9.0) struct.
+
+This struct (Don't panic. In the future we'll cover what a struct is) represents a key-value pair that can be set or retrieved. It has two properties:
+* Key
+* Value
+```csharp
+foreach(KeyValuePair<string, int> data in ages)
+{
+    Console.WriteLine($"Key: {data.Key} - Value: {data.Value}");
+}
+```
+#### Main Properties:  
+**Count:** Get the number of pairs in the dictionary.
+```csharp
+List<string> names = ages.Keys.ToList();  // Create a list containing all the keys from the dictionary
+foreach (string name in names)
+{
+    Console.WriteLine($"Name: {name}");
+}
+```
+**Keys:** Gets a collection containin the keys in the dcitionary.
+```csharp
+List<string> names = ages.Keys.ToList();  // Create a list containing all the keys from the dictionary
+foreach (string name in names)
+{
+    Console.WriteLine($"Name: {name}");
+}
+```
+**Values:** Gets a collection containing the values.
+```csharp
+List<int> peopleAges = ages.Values.ToList(); // Create a list containing all the values from the dictionary
+foreach (int age in peopleAges)
+{
+    Console.WriteLine($"Age: {age}");
+}
+```
+
+
+#### Main methods:  
+**Add:** Add a new key-value pair to the dictionary.  
+```csharp
+ages.Add("Ruben", 30);
+```
+**ContainsKey(key):** Return true or false whether if the dictionary contains the key or not.  
+```csharp
+ages.ContainsKey("Ruben") // true
+```
+**ContainsValue(value):** Return true or false whether if the dictionary contains the key or not.  
+```csharp
+ages.ContainsValue(25) // false
+```
+**Remove(key):** Remove a value with the specified key.
+```csharp
+ages.Remove("Bob");
+```
+**Clear()**: Removes all elements of the dictionary.
+```csharp
+ages.Clear();
+```
+
+---
 ### Stacks
 
 ---
