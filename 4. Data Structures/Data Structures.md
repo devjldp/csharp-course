@@ -396,12 +396,52 @@ ages.Clear();
 ### Stacks
 A [`Stack`](https://learn.microsoft.com/en-us/dotnet/api/system.collections.stack?view=net-9.0) is a collection of objects that foloows the principle of `Last-in-First-out (LIFO)`. The last object added to the stack is the first object to be removed from it.
 
+*Create a new Stack*  
+```csharp
+Stack<int> myStack = new Stack<int>();
+```
+
+**Note:** We can't acces to the objects by its index.
+```csharp
+Console.WriteLine(myStack[2]); // Error: Cannot apply indexing with [] to an expression of type 'Stack<int>'
+```
+
 #### Main Methods:
-**Push(object):** Add a new object at the end of the stack.  
+**Push(object):** Add a new object at the end of the stack.
+```csharp  
+myStack.Push(3);
+myStack.Push(4);
+myStack.Push(5);
+myStack.Push(6);
+myStack.Push(7);
+```
+
+If we iterate through the Stack, the first element in the iteration will be the last one in the stack
+```csharp
+foreach(int number in myStack)
+{
+    Console.WriteLine(number); 
+}
+    // output: 7 6 5 4 3 
+```
+
+
 **Pop():** Removes an returns the object at the top of the stack.  
+```csharp  
+myStack.Pop()
+```
 **Peek():** Returns the object at the top of the Stack without removing it.  
+```csharp  
+myStack.PeeK()
+```
 **Contains(object):** Check if the stack contains an object or not. Returns true or false.  
+```csharp  
+myStack.Contains(5); // true
+```
 **Clear():** Removes all objects from the Stack.
+```csharp  
+myStack.Clear();
+```
 
 ---
 

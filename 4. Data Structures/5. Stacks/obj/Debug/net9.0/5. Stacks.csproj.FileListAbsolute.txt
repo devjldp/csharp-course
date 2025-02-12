@@ -1,0 +1,15 @@
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\5. Stacks\obj\Debug\net9.0\5. Stacks.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\5. Stacks\obj\Debug\net9.0\5. Stacks.AssemblyInfoInputs.cache
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\5. Stacks\obj\Debug\net9.0\5. Stacks.AssemblyInfo.cs
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\5. Stacks\obj\Debug\net9.0\5. Stacks.csproj.CoreCompileInputs.cache
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\5. Stacks\obj\Debug\net9.0\5. Stacks.sourcelink.json
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\5. Stacks\bin\Debug\net9.0\5. Stacks.exe
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\5. Stacks\bin\Debug\net9.0\5. Stacks.deps.json
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\5. Stacks\bin\Debug\net9.0\5. Stacks.runtimeconfig.json
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\5. Stacks\bin\Debug\net9.0\5. Stacks.dll
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\5. Stacks\bin\Debug\net9.0\5. Stacks.pdb
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\5. Stacks\obj\Debug\net9.0\5. Stacks.dll
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\5. Stacks\obj\Debug\net9.0\refint\5. Stacks.dll
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\5. Stacks\obj\Debug\net9.0\5. Stacks.pdb
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\5. Stacks\obj\Debug\net9.0\5. Stacks.genruntimeconfig.cache
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\5. Stacks\obj\Debug\net9.0\ref\5. Stacks.dll
