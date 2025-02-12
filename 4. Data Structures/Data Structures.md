@@ -394,6 +394,14 @@ ages.Clear();
 
 ---
 ### Stacks
+A [`Stack`](https://learn.microsoft.com/en-us/dotnet/api/system.collections.stack?view=net-9.0) is a collection of objects that foloows the principle of `Last-in-First-out (LIFO)`. The last object added to the stack is the first object to be removed from it.
+
+#### Main Methods:
+**Push(object):** Add a new object at the end of the stack.  
+**Pop():** Removes an returns the object at the top of the stack.  
+**Peek():** Returns the object at the top of the Stack without removing it.  
+**Contains(object):** Check if the stack contains an object or not. Returns true or false.  
+**Clear():** Removes all objects from the Stack.
 
 ---
 
