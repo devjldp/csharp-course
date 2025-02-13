@@ -1,0 +1,15 @@
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\6. Queue\bin\Debug\net9.0\6. Queue.exe
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\6. Queue\bin\Debug\net9.0\6. Queue.deps.json
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\6. Queue\bin\Debug\net9.0\6. Queue.runtimeconfig.json
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\6. Queue\bin\Debug\net9.0\6. Queue.dll
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\6. Queue\bin\Debug\net9.0\6. Queue.pdb
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\6. Queue\obj\Debug\net9.0\6. Queue.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\6. Queue\obj\Debug\net9.0\6. Queue.AssemblyInfoInputs.cache
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\6. Queue\obj\Debug\net9.0\6. Queue.AssemblyInfo.cs
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\6. Queue\obj\Debug\net9.0\6. Queue.csproj.CoreCompileInputs.cache
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\6. Queue\obj\Debug\net9.0\6. Queue.sourcelink.json
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\6. Queue\obj\Debug\net9.0\6. Queue.dll
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\6. Queue\obj\Debug\net9.0\refint\6. Queue.dll
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\6. Queue\obj\Debug\net9.0\6. Queue.pdb
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\6. Queue\obj\Debug\net9.0\6. Queue.genruntimeconfig.cache
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\6. Queue\obj\Debug\net9.0\ref\6. Queue.dll
