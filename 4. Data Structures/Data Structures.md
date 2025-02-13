@@ -460,7 +460,7 @@ Console.WriteLine(myQueue[2]); // Error: Cannot apply indexing with [] to an exp
 ```
 
 #### Main Methods:
-**Enqueue(object):** Add a new object at the end of the Queue.
+**Enqueue(object):** Add a new object at the begining of the Queue.
 ```csharp  
 myQueue.Enqueue(3);
 myQueue.Enqueue(4);
@@ -469,28 +469,28 @@ myQueue.Enqueue(6);
 myQueue.Enqueue(7);
 ```
 
-If we iterate through the Stack, the first element in the iteration will be the last one in the stack
+If we iterate through the Queue, the first element in the iteration will be the first one in the queue
 ```csharp
-foreach(int number in myStack)
+foreach(int number in myQueue)
 {
     Console.WriteLine(number); 
 }
-    // output: 7 6 5 4 3 
+    // output: 3 4 5 6 7 
 ```
 
 **Dequeue():** Removes an returns the object at the beginning of the queue.  
 ```csharp  
 myQueue.Dequeue()
 ```
-**Peek():** Returns the object at the beginning of the Queue without removing it.  
+**Peek():** Returns the object at the beginning of the queue without removing it.  
 ```csharp  
-myQueue.PeeK()
+myQueue.Peek()
 ```
-**Contains(object):** Check if the stack contains an object or not. Returns true or false.  
+**Contains(object):** Check if the queue contains an object or not. Returns true or false.  
 ```csharp  
 myQueue.Contains(5); // true
 ```
-**Clear():** Removes all objects from the Stack.
+**Clear():** Removes all objects from the queue.
 ```csharp  
 myQueue.Clear();
 ```
