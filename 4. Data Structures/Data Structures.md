@@ -494,11 +494,74 @@ myQueue.Contains(5); // true
 ```csharp  
 myQueue.Clear();
 ```
-
-
 ---
 
 ### Hash Tables
+
+A [`has table`](https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-9.0) is a non-generic data structure that stores data in the form of key-value pairs. It is similar to dictionaries; however, unlike them, it is not strongly typed.
+
+Other differences include that it is slower than dictionaries and does not maintain the order of inserted elements.
+
+**Note:** Non-generic means that it does not use generic type parameters. Instead, it handles data as an object, which means it can store any type of data.
+
+
+#### Create a hash table
+
+```csharp
+Hashtable myHashTable = new Hashtable();
+```
+
+We can add values as follows:
+```csharp
+myHashTable["1"] = "red";
+myHashTable["red"] = 1;
+myHashTable[2] = true;
+```
+
+In a `hashtable`, we can combine different data types, unlike a dictionary. However, it is not a good practice since there can be issues when searching for elements if the exact same key type used to store a value is not used.
+
+For example, in the previous code:
+
+```csharp
+myHasTable["2"] //
+```
+
+If we want to iterate through the hashtable, we will use a `foreach` loop. Each element in the hashtable is of type `DictionaryEntry`.
+
+
+```csharp
+foreach(DictionaryEntry data in myHashtable)
+{
+    Console.WriteLine($"Key: {data.Key} - Value: {data.Value}");
+}
+```
+
+
+#### Methods:
+The main methods are similar to the dictionary's methods.
+
+**Add(key, value):** Adds an element with the specified key and value into the `Hashtable`.  
+```csharp
+myHashTable.Add("2", "blue")
+```
+**Remove(Object):** Removes the element with the specified key from the Hashtable.  
+```csharp
+myHashTable.Remove("1")
+```
+**Contains(Object):** Determines whether the Hashtable contains a specific key.  
+```csharp
+myHasTable.Contains("red") // true
+```
+**ContainsKey(Object):** Determines whether the Hashtable contains a specific key.  
+```csharp
+myHasTable.ContainsKey("2") // false
+```
+**ContainsValue(Object):** Determines whether the Hashtable contains a specific value.  
+```csharp
+myHasTable.ContainsValue(1) // true
+```
+
+
 
 ---
 
