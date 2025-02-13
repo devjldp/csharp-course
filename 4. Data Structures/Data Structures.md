@@ -446,6 +446,55 @@ myStack.Clear();
 ---
 
 ### Queues
+A [`Queue`](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.queue-1?view=net-9.0) is a collection of objects that follows the principle of `Firs-in-First-out (FIFO)`. The first object added to the queue is the first object to be removed from it.
+Think like a queue in a shop. The first customer in the queue is the first customer to be attended to by the cashier.
+
+*Create a new Stack*  
+```csharp
+Queue<int> myQueue = new Queue<int>();
+```
+
+**Note:** We can't acces to the objects by its index.
+```csharp
+Console.WriteLine(myQueue[2]); // Error: Cannot apply indexing with [] to an expression of type 'Stack<int>'
+```
+
+#### Main Methods:
+**Enqueue(object):** Add a new object at the end of the Queue.
+```csharp  
+myQueue.Enqueue(3);
+myQueue.Enqueue(4);
+myQueue.Enqueue(5);
+myQueue.Enqueue(6);
+myQueue.Enqueue(7);
+```
+
+If we iterate through the Stack, the first element in the iteration will be the last one in the stack
+```csharp
+foreach(int number in myStack)
+{
+    Console.WriteLine(number); 
+}
+    // output: 7 6 5 4 3 
+```
+
+**Dequeue():** Removes an returns the object at the beginning of the queue.  
+```csharp  
+myQueue.Dequeue()
+```
+**Peek():** Returns the object at the beginning of the Queue without removing it.  
+```csharp  
+myQueue.PeeK()
+```
+**Contains(object):** Check if the stack contains an object or not. Returns true or false.  
+```csharp  
+myQueue.Contains(5); // true
+```
+**Clear():** Removes all objects from the Stack.
+```csharp  
+myQueue.Clear();
+```
+
 
 ---
 
