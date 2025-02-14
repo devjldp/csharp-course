@@ -523,7 +523,7 @@ In a `hashtable`, we can combine different data types, unlike a dictionary. Howe
 For example, in the previous code:
 
 ```csharp
-myHasTable["2"] //
+Console.WriteLine(myHashTable["2"]); //is null
 ```
 
 If we want to iterate through the hashtable, we will use a `foreach` loop. Each element in the hashtable is of type `DictionaryEntry`.
@@ -542,23 +542,23 @@ The main methods are similar to the dictionary's methods.
 
 **Add(key, value):** Adds an element with the specified key and value into the `Hashtable`.  
 ```csharp
-myHashTable.Add("2", "blue")
+myHashTable.Add("2", "blue");
 ```
 **Remove(Object):** Removes the element with the specified key from the Hashtable.  
 ```csharp
-myHashTable.Remove("1")
+myHashTable.Remove("1");
 ```
 **Contains(Object):** Determines whether the Hashtable contains a specific key.  
 ```csharp
-myHasTable.Contains("red") // true
+Console.WriteLine(myHashTable.Contains("red")); // true
 ```
 **ContainsKey(Object):** Determines whether the Hashtable contains a specific key.  
 ```csharp
-myHasTable.ContainsKey("2") // false
+Console.WriteLine(myHashTable.ContainsKey("2")); // true
 ```
 **ContainsValue(Object):** Determines whether the Hashtable contains a specific value.  
 ```csharp
-myHasTable.ContainsValue(1) // true
+ Console.WriteLine(myHashTable.ContainsValue(1)); // true
 ```
 
 

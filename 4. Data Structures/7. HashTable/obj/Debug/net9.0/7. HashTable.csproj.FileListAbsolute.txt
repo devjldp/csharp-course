@@ -1,0 +1,15 @@
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\7. HashTable\obj\Debug\net9.0\7. HashTable.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\7. HashTable\obj\Debug\net9.0\7. HashTable.AssemblyInfoInputs.cache
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\7. HashTable\obj\Debug\net9.0\7. HashTable.AssemblyInfo.cs
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\7. HashTable\obj\Debug\net9.0\7. HashTable.csproj.CoreCompileInputs.cache
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\7. HashTable\obj\Debug\net9.0\7. HashTable.sourcelink.json
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\7. HashTable\bin\Debug\net9.0\7. HashTable.exe
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\7. HashTable\bin\Debug\net9.0\7. HashTable.deps.json
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\7. HashTable\bin\Debug\net9.0\7. HashTable.runtimeconfig.json
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\7. HashTable\bin\Debug\net9.0\7. HashTable.dll
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\7. HashTable\bin\Debug\net9.0\7. HashTable.pdb
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\7. HashTable\obj\Debug\net9.0\7. HashTable.dll
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\7. HashTable\obj\Debug\net9.0\refint\7. HashTable.dll
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\7. HashTable\obj\Debug\net9.0\7. HashTable.pdb
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\7. HashTable\obj\Debug\net9.0\7. HashTable.genruntimeconfig.cache
+C:\Users\JoseIungo\Desktop\Github\csharp-course\4. Data Structures\7. HashTable\obj\Debug\net9.0\ref\7. HashTable.dll
