@@ -7,7 +7,7 @@ namespace OOP1
         // Fields
         public string type;
         public string breed;
-        public string name;
+        private string name;
         public int age;
 
         // Methods
@@ -37,6 +37,15 @@ namespace OOP1
             Console.WriteLine($"{name} is playing");
         }
 
+        public string Get(){
+            return name;
+        }
+
+        public void Set(string newName)
+        {
+            this.name = newName;
+        }
+
     }
 
     public class Program
@@ -61,6 +70,13 @@ namespace OOP1
             michi.Play();
             michi.Eat();
             michi.Sleep();
+
+            // Console.WriteLine(michi.name);  error CS0122: 'Animal.name' is inaccessible due to its protection level
+            
+
+            Console.WriteLine(michi.Get());
+            michi.Set("Felix");
+            Console.WriteLine(michi.Get());
         }
     }
 }
