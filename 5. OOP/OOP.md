@@ -3,14 +3,14 @@
 
 ## Content
 
-- [Object Oriented Programming](#object-oriented-programming)
-  - [Content](#content)
-    - [Introduction](#introduction)
-    - [Objects](#objects)
-    - [Classes](#classes)
-    - [OOP Principles](#oop-principles)
-    - [how to define classes and objects.](#how-to-define-classes-and-objects)
-    - [Example.](#example)
+1. [Introduction](#introduction)
+2. [Objects](#objects)
+3. [Classes](#classes)
+4. [OOP Principles](#oop-principles)
+5. [how to define classes and objects.](#how-to-define-classes-and-objects)
+6. [Example.](#example)
+7. [Access modifiers](#access-modifiers)
+
 
 ### Introduction
 
@@ -108,3 +108,41 @@ myPet.MakeSound(); // Buddy is making a sound!
 myPet.Describe(); // This is a Dog named Buddy, and it is 5 years old.  
 
 ```
+
+### Access Modifiers
+
+In c#, our variables, clases methods... have some type of accessibility level. We are control  if they can be used from another part of code.
+
+The main access modifiers are:
+* **public:** Code in any assembly can access this type or member. The accessibility level of the containing type controls the accessibility level of public members of the type.
+* **private:** Only code declared in the same class or struct can access this member.
+* **protected:** Only code in the same class or in a derived class can access this type or member.
+* **internal:** Only code in the same assembly can access this type or member.
+* **protected internal:** Only code in the same assembly or in a derived class in another assembly can access this type or member.
+* **private protected:** Only code in the same assembly and in the same class or a derived class can access the type or member.
+* **file:** Only code in the same file can access the type or member. It applies only to types. Introduced in C# 11.
+
+**Note:** Information obtained from [Microsoft Documentation](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers)
+
+
+```csharp
+class Animal
+{
+    private string name; // Private field, only accessible within this class
+
+    // methods
+}
+
+class Program
+{
+    static void Main()
+    {
+        Animal cat = new Animal("Cat");
+        
+        Console.WriteLien(cat.name) // Error: cat.name  is inaccessible due to its protection level 
+    }
+}
+```
+
+
+
