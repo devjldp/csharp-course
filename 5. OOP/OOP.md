@@ -10,7 +10,7 @@
 5. [how to define classes and objects.](#how-to-define-classes-and-objects)
 6. [Example.](#example)
 7. [Access modifiers](#access-modifiers)
-
+8. [Getters and Setters](#)
 
 ### Introduction
 
@@ -131,6 +131,10 @@ class Animal
     private string name; // Private field, only accessible within this class
 
     // methods
+    public Animal(string name)
+    {
+      this.name =  name;
+    }
 }
 
 class Program
@@ -143,6 +147,57 @@ class Program
     }
 }
 ```
+
+
+### Getters and Setters
+
+When we have a private field, we cannot access or modify it from outside, only within the same class. So how can we perform these operations? We will create public methods to access and modify the information.
+
+* The `get` method returns the value of the field.
+* The `set` method modify the value of the field.
+
+```csharp
+class Animal
+{
+    private string name; // Private field, only accessible within this class
+
+    // methods
+    public Animal(string name)
+    {
+      this.name =  name;
+    }
+
+  public string Get(){
+    return name;
+  }
+
+  public void Set(string newName){
+    name = newName;
+  }
+
+
+}
+
+class Program
+{
+    static void Main()
+    {
+        Animal cat = new Animal("Michi");
+        
+        Console.WriteLien(cat.name) // Error: cat.name  is inaccessible due to its protection level 
+        Console.WriteLien(cat.Get()) // Michi 
+        Console.WriteLien(cat.Set("Tobby")) // Michi 
+        Console.WriteLien(cat.Get()) // Tobby 
+    }
+}
+
+```
+
+
+
+
+
+
 
 
 
