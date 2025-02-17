@@ -1,0 +1,15 @@
+C:\Users\JoseIungo\Desktop\Github\csharp-course\5. OOP\1. OOP fundamentals\obj\Debug\net9.0\1. OOP fundamentals.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JoseIungo\Desktop\Github\csharp-course\5. OOP\1. OOP fundamentals\obj\Debug\net9.0\1. OOP fundamentals.AssemblyInfoInputs.cache
+C:\Users\JoseIungo\Desktop\Github\csharp-course\5. OOP\1. OOP fundamentals\obj\Debug\net9.0\1. OOP fundamentals.AssemblyInfo.cs
+C:\Users\JoseIungo\Desktop\Github\csharp-course\5. OOP\1. OOP fundamentals\obj\Debug\net9.0\1. OOP fundamentals.csproj.CoreCompileInputs.cache
+C:\Users\JoseIungo\Desktop\Github\csharp-course\5. OOP\1. OOP fundamentals\obj\Debug\net9.0\1. OOP fundamentals.sourcelink.json
+C:\Users\JoseIungo\Desktop\Github\csharp-course\5. OOP\1. OOP fundamentals\bin\Debug\net9.0\1. OOP fundamentals.exe
+C:\Users\JoseIungo\Desktop\Github\csharp-course\5. OOP\1. OOP fundamentals\bin\Debug\net9.0\1. OOP fundamentals.deps.json
+C:\Users\JoseIungo\Desktop\Github\csharp-course\5. OOP\1. OOP fundamentals\bin\Debug\net9.0\1. OOP fundamentals.runtimeconfig.json
+C:\Users\JoseIungo\Desktop\Github\csharp-course\5. OOP\1. OOP fundamentals\bin\Debug\net9.0\1. OOP fundamentals.dll
+C:\Users\JoseIungo\Desktop\Github\csharp-course\5. OOP\1. OOP fundamentals\bin\Debug\net9.0\1. OOP fundamentals.pdb
+C:\Users\JoseIungo\Desktop\Github\csharp-course\5. OOP\1. OOP fundamentals\obj\Debug\net9.0\1. OOP fundamentals.dll
+C:\Users\JoseIungo\Desktop\Github\csharp-course\5. OOP\1. OOP fundamentals\obj\Debug\net9.0\refint\1. OOP fundamentals.dll
+C:\Users\JoseIungo\Desktop\Github\csharp-course\5. OOP\1. OOP fundamentals\obj\Debug\net9.0\1. OOP fundamentals.pdb
+C:\Users\JoseIungo\Desktop\Github\csharp-course\5. OOP\1. OOP fundamentals\obj\Debug\net9.0\1. OOP fundamentals.genruntimeconfig.cache
+C:\Users\JoseIungo\Desktop\Github\csharp-course\5. OOP\1. OOP fundamentals\obj\Debug\net9.0\ref\1. OOP fundamentals.dll
