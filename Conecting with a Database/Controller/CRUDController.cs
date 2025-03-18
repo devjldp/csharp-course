@@ -1,4 +1,5 @@
-using DbConnect.Data;
+// import the namespace DbConnect.Data from the file DBConnection.cs
+using DbConnect.Data; 
 using Npgsql;
 using System;
 using System.Collections.Generic;
@@ -8,20 +9,23 @@ namespace Crud.Controller
 {
     public class CrudOperations
     {
-        private NpgsqlConnection connection;
+        private NpgsqlConnection _connection;
 
         public CrudOperations()
         {
-            connection =  new DbConnection().GetConnection();
+            _connection =  new DbConnection().GetConnection();
         }
 
         // insert
         public void InsertEmployee(string fullName, int age, string city, string email, string role)
         {
-            connection.Open();
+            _connection.Open();
+
+            // Define the query
             string query = "INSERT INTO employee (full_name, age, city, email, role) VALUES (@fullName, @age, @city, @email, @role)";
 
-            using (var cmd = new NpgsqlCommand(query, connection))
+            // Create a SQL command
+            using (var cmd = new NpgsqlCommand(query, _connection))
             {
                 cmd.Parameters.AddWithValue("fullName", fullName);
                 cmd.Parameters.AddWithValue("age", age);
@@ -30,18 +34,19 @@ namespace Crud.Controller
                 cmd.Parameters.AddWithValue("role", role);
                 cmd.ExecuteNonQuery();
             }
-            Console.WriteLine("Empleado agregado con éxito.");
-            connection.Close();
+            Console.WriteLine("Employee added.");
+            _connection.Close();
         }
+
         // update
         // select
         public void DisplayEmployees()
         {
-            connection.Open();
+            _connection.Open();
 
             string query = "SELECT * FROM employee";
 
-            using (var cmd = new NpgsqlCommand(query, connection))
+            using (var cmd = new NpgsqlCommand(query, _connection))
             using (var reader = cmd.ExecuteReader())
                 {
                 while (reader.Read())
@@ -50,7 +55,7 @@ namespace Crud.Controller
                     }
                 }
 
-            connection.Close();
+            _connection.Close();
 
         }
 
