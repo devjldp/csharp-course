@@ -60,13 +60,13 @@ namespace Crud.Controller
         }
 
         // select by option
-        public object GetEmployee(string option, object value)
+        public object SearchEmployee(string option, object value)
         {
             _connection.Open();
 
             List<Dictionary<string, object>> results = new List<Dictionary<string, object>>();
 
-            string query = $"SELECT * FROM employee WHERE {option} == {value}";
+            string query = $"SELECT * FROM employee WHERE {option} = {value}";
 
             using(var cmd = new NpgsqlCommand(query, _connection))
             using(var reader = cmd.ExecuteReader())
@@ -83,14 +83,25 @@ namespace Crud.Controller
                     results.Add(data);
                 }
             }
-            results.add(reader)
+           
             _connection.Close();
 
             return results;
         }
 
-
-
         // remove
+        public void DeleteEmployee(int id)
+        {
+            _connection.Open();
+
+            string query = "DELETE FROM employee WHERE id = @id";
+            using(var cmd = new NpgsqlCommand(query, _connection))
+            {
+               cmd.Parameters.AddWithValue("id", id);
+               cmd.ExecuteNonQuery();
+            }
+            Console.WriteLine($"Employee with ID: {id} has been removed");
+            _connection.Close();
+        }
     }
 }
