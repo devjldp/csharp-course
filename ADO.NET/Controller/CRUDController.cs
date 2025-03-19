@@ -66,26 +66,26 @@ namespace Crud.Controller
 
             List<Dictionary<string, object>> results = new List<Dictionary<string, object>>();
 
-            string query = $"SELECT * FROM employee WHERE {option} = {value}";
+            string query = $"SELECT * FROM employee WHERE {option} = @value";
 
             using(var cmd = new NpgsqlCommand(query, _connection))
-            using(var reader = cmd.ExecuteReader())
             {
-                Dictionary<string, object> data = new Dictionary<string, object>();
-                
-                while (reader.Read())
+                cmd.Parameters.AddWithValue("value",value);
+                using(var reader = cmd.ExecuteReader())
                 {
-                    // Iterate over all columns of the current row and store the column name as the key and the cell value as the value
-                    for(int i=0; i < reader.FieldCount; i++)
+                    Dictionary<string, object> data = new Dictionary<string, object>();
+                    while (reader.Read())
                     {
-                        data[reader.GetName(i)] = reader.GetValue(i);
+                        // Iterate over all columns of the current row and store the column name as the key and the cell value as the value
+                        for(int i=0; i < reader.FieldCount; i++)
+                        {
+                            data[reader.GetName(i)] = reader.GetValue(i);
+                        }
+                        results.Add(data);
                     }
-                    results.Add(data);
                 }
             }
-           
             _connection.Close();
-
             return results;
         }
 
@@ -98,10 +98,11 @@ namespace Crud.Controller
             using(var cmd = new NpgsqlCommand(query, _connection))
             {
                cmd.Parameters.AddWithValue("id", id);
-               cmd.ExecuteNonQuery();
+               cmd.ExecuteNonQuery(); // execute the query
             }
             Console.WriteLine($"Employee with ID: {id} has been removed");
             _connection.Close();
         }
+    
     }
 }
