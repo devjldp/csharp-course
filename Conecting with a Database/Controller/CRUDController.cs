@@ -39,7 +39,7 @@ namespace Crud.Controller
         }
 
         // update
-        // select
+        // select all employees
         public void DisplayEmployees()
         {
             _connection.Open();
@@ -51,13 +51,45 @@ namespace Crud.Controller
                 {
                 while (reader.Read())
                     {
-                        Console.WriteLine($"ID: {reader["id"]}, Name: {reader["full_name"]}, Age: {reader["age"]}, City: {reader["city"]}, Email: {reader["email"]}, Role: {reader["role"]}");
+                        Console.WriteLine($"ID: {reader["id"]} | Name: {reader["full_name"]} | Age: {reader["age"]} | City: {reader["city"]} | Email: {reader["email"]} | Role: {reader["role"]}");
                     }
                 }
 
             _connection.Close();
 
         }
+
+        // select by option
+        public object GetEmployee(string option, object value)
+        {
+            _connection.Open();
+
+            List<Dictionary<string, object>> results = new List<Dictionary<string, object>>();
+
+            string query = $"SELECT * FROM employee WHERE {option} == {value}";
+
+            using(var cmd = new NpgsqlCommand(query, _connection))
+            using(var reader = cmd.ExecuteReader())
+            {
+                Dictionary<string, object> data = new Dictionary<string, object>();
+                
+                while (reader.Read())
+                {
+                    // Iterate over all columns of the current row and store the column name as the key and the cell value as the value
+                    for(int i=0; i < reader.FieldCount; i++)
+                    {
+                        data[reader.GetName(i)] = reader.GetValue(i);
+                    }
+                    results.Add(data);
+                }
+            }
+            results.add(reader)
+            _connection.Close();
+
+            return results;
+        }
+
+
 
         // remove
     }
