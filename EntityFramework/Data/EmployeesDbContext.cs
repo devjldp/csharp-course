@@ -1,3 +1,7 @@
+using Microsoft.EntityFrameworkCore;
+using EntityFramework.Models;
+
+
 namespace EntityFramework.Data{
     public class EmployeeContext : DbContext
     {

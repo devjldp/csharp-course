@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Configuration.Json;
 using Microsoft.Extensions.DependencyInjection;
 using EntityFramework.Data;
 using System.IO;
@@ -9,7 +10,7 @@ namespace EntityFramework.Data
 {
     public static class DbConfig
     {
-        public static void ConfigureDatabase(IServiceCollection services)
+        public static void ConfigureDatabase(this IServiceCollection services)
         {
             // Load configuration from appsettings.json
             var config = new ConfigurationBuilder()

@@ -1,6 +1,7 @@
+using System.Collections.Generic;
+using System.Linq;
+using EntityFramework.Data;
 using EntityFramework.Models;
-using Microsoft.EntityFrameworkCore;
-using EntityFramework.Data;  
 
 namespace EntityFramework.Services
 {
@@ -8,46 +9,46 @@ namespace EntityFramework.Services
     {
         private readonly EmployeeContext _context;
 
-        // Constructor that receives the EmployeeContext
+        // Constructor que recibe el contexto de empleados
         public EmployeeService(EmployeeContext context)
         {
-            _context = context; // Asign the context to the private field.
+            _context = context; // Asigna el contexto al campo privado
         }
 
-        // Create a new employee
+        // Crear un nuevo empleado
         public void AddEmployee(Employee employee)
         {
-            _context.Employees.Add(employee);
-            _context.SaveChanges(); // Synchronous save
+            _context.Employees.Add(employee); // Uso de 'Employees' en vez de 'Employee'
+            _context.SaveChanges(); // Guardar cambios de forma síncrona
         }
 
-        // Get all employees
+        // Obtener todos los empleados
         public List<Employee> GetAllEmployees()
         {
-            return _context.Employees.ToList(); // Synchronous query
+            return _context.Employees.ToList(); // Uso de 'Employees' en vez de 'Employee'
         }
 
-        // Get an employee by id
+        // Obtener un empleado por su ID
         public Employee GetEmployeeById(int id)
         {
-            return _context.Employees.Find(id); // Synchronous query
+            return _context.Employees.Find(id); // Uso de 'Employees' en vez de 'Employee'
         }
 
-        // Update an employee
+        // Actualizar un empleado
         public void UpdateEmployee(Employee employee)
         {
-            _context.Employees.Update(employee);
-            _context.SaveChanges(); // Synchronous save
+            _context.Employees.Update(employee); // Uso de 'Employees' en vez de 'Employee'
+            _context.SaveChanges(); // Guardar cambios de forma síncrona
         }
 
-        // Delete an employee
+        // Eliminar un empleado
         public void DeleteEmployee(int id)
         {
-            var employee = _context.Employees.Find(id);
+            var employee = _context.Employees.Find(id); // Uso de 'Employees' en vez de 'Employee'
             if (employee != null)
             {
-                _context.Employees.Remove(employee);
-                _context.SaveChanges(); // Synchronous save
+                _context.Employees.Remove(employee); // Uso de 'Employees' en vez de 'Employee'
+                _context.SaveChanges(); // Guardar cambios de forma síncrona
             }
         }
     }
