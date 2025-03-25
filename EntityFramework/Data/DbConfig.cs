@@ -22,7 +22,7 @@ namespace EntityFramework.Data
 
             // Register the DbContext in the dependencies container.  
             services.AddDbContext<EmployeeContext>(options => 
-                options.UseNpgsql(configString));
+                options.UseNpgsql(configString)); // Use Npgsql to connect to PostgreSQL database
         }
     }
 }
