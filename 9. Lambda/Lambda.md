@@ -7,5 +7,6 @@ A lambda expression is a concise way to write anonymus functions. It is often us
 
 We use the `=>` operator to separate the input parameters from the expression or statement block that forms the body.
 
+```csharp
 () => Console.WriteLine("Say Hello!");
-
+```
