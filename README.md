@@ -24,20 +24,22 @@ The course is divided into several sections form basic topics to advanced topics
 4. [Data Structures](4.%20Data%20Structures/Data%20Structures.md)
 5. [Object Oriented Programming](5.%20OOP/OOP.md)
 6. [Multithreading](6.%20Multithreading/Multithreading.md) 
-7. Exception handling.
+7. [Asynchronous](7.%20Asynchronous/Asynchronous.md)
 8. [Delegates](8.%20Delegates/Delegates.md) 
-9. [Lambda expresions](9.%20Lambda/Lambda.md)
-10. Unit Testing / Testing Frameworks.
-11. Debugging tools.
-12. Documentation.
-13. Advance data structures: Structs, Enumerates, Delegates, Events.
-14. Lambda Expressions.
-15. LINQ.
-16. Asynchronous programming.
-17. Parallel Programming and Threads.
-18. Design Patterns.
-19. Databases Connection.
-20. ORM. Entity Framework.
-21. Model - View - Controller.
-22. C# for Web Development.
-23. Deployment and CI/CD in C#.
+9.  [Lambda expresions](9.%20Lambda/Lambda.md)
+10. [LINQ](10.%20LINQ/LINQ.md)
+11. Exception handling.
+12. Unit Testing / Testing Frameworks.
+13. Debugging tools.
+14. Documentation.
+15. Advance data structures: Structs, Enumerates, Delegates, Events.
+16. Lambda Expressions.
+17. LINQ.
+18. Asynchronous programming.
+19. Parallel Programming and Threads.
+20. Design Patterns.
+21. Databases Connection.
+22. ORM. Entity Framework.
+23. Model - View - Controller.
+24. C# for Web Development.
+25. Deployment and CI/CD in C#.
