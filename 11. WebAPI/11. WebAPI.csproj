@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework> <!-- version de .net que estamos usando -->
     <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings> un archivo global
+    <ImplicitUsings>enable</ImplicitUsings> <!-- un archivo global -->
     <RootNamespace>_11._WebAPI</RootNamespace>
   </PropertyGroup>
 
