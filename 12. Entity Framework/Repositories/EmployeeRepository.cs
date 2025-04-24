@@ -27,5 +27,28 @@ namespace Employees.Repositories
             return _context.Employees.ToList();
         }
 
+        public void DeleteEmployee(int employeeId)
+        {
+            // first I need to find the element that I want to remove. To do tha I use LINQ
+            Employee employee = _context.Employees.First(employee => employee.Id == employeeId);
+          
+            // Remove
+            _context.Remove(employee);
+            // save changes to database
+            _context.SaveChanges();
+
+            Console.WriteLine("Employee Removed succesfully!");
+        }
+
+        public Employee GetEmployeeById(int employeeId)
+        {
+            return _context.Employees.Find(employeeId);
+        }
+
+        public void UpdateEmployee(Employee employee)
+        {
+            _context.SaveChanges();
+        }
+
     }
 }
